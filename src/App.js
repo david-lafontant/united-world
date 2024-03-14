@@ -1,10 +1,11 @@
+import Container from 'react-bootstrap/Container';
 import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className="container-fluid">
+    <Container fluid>
       <Header />
-    </div>
+    </Container>
   );
 }
 
