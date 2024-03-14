@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row';
 import styles from './Header.module.css';
 
 const Header = () => (
-  <Container fluid>
+  <Container fluid className={`${styles.header}`}>
     <Row className={`d-none d-lg-block ${styles.login_social}`}>
       <Col>
         <Nav className={`${styles.login_social_list}`}>
