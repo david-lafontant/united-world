@@ -1,16 +1,18 @@
-.header{
-  position:fixed;
-  top:0;
+.header {
+  position: fixed;
+  top: 0;
   left: 0;
 }
-.login_social{
+
+.login_social {
   padding-top: 1rem;
   background-color: #272a31;
 }
-.login_social_list{
-display: flex;
-justify-content: flex-end;
-gap: 2rem;
-color: #d3d3d3;
-list-style-type: none;
+
+.login_social_list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  color: #d3d3d3;
+  list-style-type: none;
 }
