@@ -1,9 +1,14 @@
 import React from 'react';
+
 import Container from 'react-bootstrap/Container';
+import styles from './Home.module.css';
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 
 function Home() {
   return (
-    <Container className="p-4 mt-4">
+    <Container fluid className={`${styles.home}`}>
+      <Jumbotron />
+      <h1>Lorem lorem</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Excepturi sapiente necessitatibus quaerat ut quisquam, iste sint
