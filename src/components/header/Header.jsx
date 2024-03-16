@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Button } from 'react-bootstrap/Button';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
@@ -24,16 +23,16 @@ const Header = () => (
     </Row>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">U&nbsp;W&nbsp;S</Navbar.Brand>
+        <Navbar.Brand href="/">U&nbsp;W&nbsp;S</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#program">Program</Nav.Link>
-            <Nav.Link href="#sponsors">About</Nav.Link>
-            <Nav.Link href="News">Program</Nav.Link>
-            <Nav.Link href="#campaign">CC Campaign</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+            <Nav.Link as={NavLink} to="News">News</Nav.Link>
+            <Nav.Link as={NavLink} to="/program">Program</Nav.Link>
+            <Nav.Link as={NavLink} to="/sponsors">News</Nav.Link>
+            <Nav.Link as={NavLink} to="#campaign">CC Campaign</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
